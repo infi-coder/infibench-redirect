@@ -115,12 +115,12 @@ layout: mydefault
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="./static/report/inficoder_eval_report_draft.pdf"
+                  <a href="./static/report/inficoder_eval_report.pdf"
                     class="external-link button is-normal is-rounded is-dark" target='_blank'>
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
-                    <span>Report (draft version)</span>
+                    <span>Report</span>
                   </a>
                 </span>
                 <!-- Dataset Link. -->
@@ -537,7 +537,7 @@ layout: mydefault
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="./static/report/inficoder_eval_report_draft.pdf">
+        <a class="icon-link" href="./static/report/inficoder_eval_report.pdf">
           <i class="fas fa-file-pdf" style="color:white"></i>
         </a>
         <a class="icon-link" href="https://github.com/infi-coder" class="external-link" disabled>
