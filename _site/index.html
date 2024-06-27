@@ -2,12 +2,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="InfiCoder-Eval: Systematically Evaluating Question-Answering
-  for Code Large Language Models" />
+  <meta name="description" content="IInfiBench: Evaluating the Question-Answering Capabilities of Code LLMs" />
   <meta name="keywords" content="InfiCoder-Eval, code-generation, large-language-model, benchmark" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>InfiCoder-Eval: Systematically Evaluating Question-Answering
-    for Code Large Language Models</title>
+  <title>InfiBench: Evaluating the Question-Answering Capabilities of Code LLMs</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
 
@@ -75,7 +73,7 @@
 
   <div class="container">
     <div class="column has-text-centered">
-      <img style="max-width: 200px; margin-bottom: -50px;" src="static/images/inficoder_eval_logo2.png" />
+      <img style="max-width: 200px; margin-bottom: -50px;" src="static/images/inficoder_eval_logo3.png" />
     </div>
   </div>
 
@@ -84,21 +82,18 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">InfiCoder-Eval: Systematically Evaluating Question-Answering
-              for Code Large Language Models
+            <h1 class="title is-1 publication-title">InfiBench: Evaluating the Question-Answering Capabilities of Code LLMs
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                InfiCoder Team @ ByteDance Ltd. and Peking University
+                The InfiCoder Team
               </span>
               <br />
               <!-- <span class="author-block">
-                Main Maintainer: <a href="mailto:linyi.li@bytedance.com">Linyi Li</a>
-                <br>
-                Team Lead: <a href="mailto:hx.yang@bytedance.com">Hongxia Yang</a>
+                Main Maintainer: <a href="mailto:xxxxx">xxxxx</a>
               </span> -->
               <!-- <span class="author-block">
-                <a href="https://xxx.github.io/">Siwei Wang</a><sup>1</sup></span>
+                <a href="https://xxx.github.io/">xxxxxx</a><sup>1</sup></span>
 			        <br/> -->
             </div>
 
@@ -111,7 +106,7 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="./static/report/inficoder_eval_report.pdf" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <a href="https://arxiv.org/abs/2404.07940" class="external-link button is-normal is-rounded is-dark" target="_blank">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -120,18 +115,19 @@
                 </span>
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/infi-coder/ffqa-evaluation-harness" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <a href="https://github.com/infi-coder/infibench-evaluation-harness/" class="external-link button is-normal is-rounded is-dark" target="_blank">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Inference Repo</span>
+                    <span>Code</span>
                   </a>
-                  <a href="https://github.com/infi-coder/inficoder-eval-framework" class="external-link button is-normal is-rounded is-dark" target="_blank">
+                  <!-- <a href="https://github.com/infi-coder/inficoder-eval-framework"
+                     class="external-link button is-normal is-rounded is-dark" target='_blank'>
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Evaluation Repo</span>
-                  </a>
+                  </a> -->
                 </span>
                 <!-- Twitter Link. -->
                 <!-- <span class="link-block">
@@ -156,7 +152,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h2 class="subtitle has-text-centered">
-          InfiCoder-Eval is a systematic benchmark and evaluation framework for the free-form question-answering ability of code language models.
+          InfiBench is a comprehensive benchmark for code large language models evaluating model ability on answering freeform real-world questions in the code domain.
         </h2>
         <img src="static/images/inficoder-eval-main.png" />
       </div>
@@ -172,28 +168,9 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              Large language models for code (code LLMs)
-              have made huge progress. Evaluation benchmarks
-              for code LLMs, such as <a href="https://github.com/openai/human-eval">HumanEval</a>, <a href="https://ds1000-code-gen.github.io/">DS-1000</a>,
-              and <a href="https://arxiv.org/abs/2108.07732">MBPP</a>, predominantly focus on code generation. But they are insufficient to evaluate code
-              LLMs’ multifaceted ability. To fill this gap, we
-              propose InfiCoder-Eval, a large-scale free-form
-              question-answering (QA) benchmark for code.
-              InfiCoder-Eval comprises 270 carefully picked
-              high-quality StackOverflow questions, covering
-              18 programming languages. To tackle the evaluation challenge, InfiCoder-Eval includes an evaluation framework integrating four types of model-free metrics, and domain experts design the concrete criteria for each question. As confirmed
-              with human experiments, InfiCoder-Eval evaluation aligns with humans better than model-based evaluation and runs much faster at the
-              same time. We conduct a systematic evaluation with InfiCoder-Eval for more than 30 code
-              LLMs, leading to several interesting findings. For
-              example, though open-source code LLMs show
-              competitive performance with proprietary models in code generation (e.g., HumanEval), they
-              still have a large gap compared to proprietary
-              ones in InfiCoder-Eval and even the best proprietary LLM (GPT4) is still far from perfect (best
-              open-source model Deepseek-Coder 33B Instruct
-              achieves 50.34% and GPT4 achieves 59.13%).
-              Furthermore, our detailed analysis reveals several
-              weaknesses of current code LLMs. Benchmark,
-              evaluation tools, and detailed results are all publicly available.
+              Large Language Models for code (code LLMs) have witnessed tremendous progress in recent years. 
+              With the rapid development of code LLMs, many popular evaluation benchmarks, such as <a href="https://github.com/openai/human-eval">HumanEval</a>, <a href="https://ds1000-code-gen.github.io/">DS-1000</a>,
+              and <a href="https://arxiv.org/abs/2108.07732">MBPP</a>, have emerged to measure the performance of code LLMs with a particular focus on code generation tasks. However, they are insufficient to cover the full range of expected capabilities of code LLMs, which span beyond code generation to answering diverse coding-related questions. To fill this gap, we propose InfiBench, the first large-scale freeform question-answering (QA) benchmark for code to our knowledge, comprising 234 carefully selected high-quality Stack Overflow questions that span across 15 programming languages. InfiBench uses four types of model-free automatic metrics to evaluate response correctness where domain experts carefully concretize the criterion for each question. We conduct a systematic evaluation for over 100 latest code LLMs on InfiBench, leading to a series of novel and insightful findings. Our detailed analyses showcase potential directions for further advancement of code LLMs. InfiBench is fully open source and continuously expanding to foster more scientific and systematic practices for code LLM evaluation.
             </p>
           </div>
         </div>
@@ -211,7 +188,7 @@
           <h2 class="title is-3">Statistics and Examples</h2>
           <div class="content has-text-justified">
             <p>
-              InfiCoder-Eval comprises 270 carefully picked high-quality Stack Overflow questions, covering 18 programming languages, and largely <b>following the natural question distribution of <a href="https://stackoverflow.com/">Stack Overflow</a></b>.
+              InfiBench comprises 234 carefully picked high-quality Stack Overflow questions, covering 15 programming languages, and largely <b>following the natural question distribution of <a href="https://stackoverflow.com/">Stack Overflow</a></b>.
             </p>
 
             <img src="static/images/data_domain_stats.png" />
@@ -219,7 +196,7 @@
             <p>
             <br />
               We recruited five domain experts to create the benchmark and annotate the correctness evaluation criteria.
-              Specifically, the InfiCoder-Eval framework integrates four types of model-free metrics for evaluating the correctness: keywords matching, blank filling, unit testing, and dialogue similarity.
+              Specifically, the InfiBench framework integrates four types of model-free metrics for evaluating the correctness: keywords matching, blank filling, unit testing, and dialogue similarity.
             </p>
 
             <img src="static/images/data_examples.png" />
@@ -230,7 +207,7 @@
             </p>
 
             <center>
-              <img src="static/images/general_statistics.png" />
+              <img style="width: 350px" src="static/images/general_statistics.png" />
             </center>
 
           </div>
@@ -291,7 +268,7 @@
             </p>
             <p>For score computation, we treat each question equally with one point each.
               <b>Since the question frequency largely follows the Stack Overflow distribution, this score can be explained as how well the model responds to Stack Overflow questions.</b>
-              Given 270 questions in the benchmark, the full score is 270, and we by default report the percentage score (achieved score divided by the full score which is 270).
+              Given 234 questions in the benchmark, the full score is 234, and we by default report the percentage score (achieved score divided by the full score which is 234).
               The one point for each question can be further decomposed into a few scoring points within each question.
               For example, a question may contain four keywords with weights 2, 1, 1, and 1 each.
               Then, matching each keyword can contribute to 0.4, 0.2, 0.2, and 0.2 points respectively to the final score.
@@ -318,7 +295,7 @@
           <div>
             <img src="static/images/all_results.png" />
           </div>
-          <p>Each blue point corresponds to one open-source model, with error bars for those smaller than 30B parameters. Proprietary models are plotted as lines with uncertainty ranges.</p>
+          <p>Each point corresponds to an open-source model, with error bars for those smaller than 30B. Each dotted segment corresponds to an MoE model. Proprietary models shown as lines with uncertainty ranges.</p>
         </div>
       </div>
     </div>
@@ -334,13 +311,11 @@
                   </div>
                 </p>
                 <p align="left">
-                  <div class="left">We evenly split the 270 benchmark questions to 135-question dev set and 135-question test set. Dev set is publicly available, and the test set is on held where evaluation is available upon request (see below for instructions). 
-                  Models are ranked according to full set scores.
+                  <div class="left">For models with &gt;30B parameters, we evaluate once due to resource limit, otherwise we evaluate three times and report the mean and standard deviation.
                   </div>
                 </p>
                 <p align="left">
-                  <div class="left">For models with &gt;30B parameters, we evaluate once due to resource limit, otherwise we evaluate three times and report the mean and standard deviation.
-                  </div>
+                  <div class="left"><i class="fa fa-lock"></i> stands for proprietary models.</div>
                 </p>
                 <br />
                 <table class="table maintable stripe hover row-border order-column" id="maintable">
@@ -349,12 +324,9 @@
                       <th>Rank</th>
                       <th>Model Name</th>
                       <th># Params. (in B)</th>
+                      <th>Context Length</th>
                       <th>Full Set Score</th>
                       <th>Full Set Std</th>
-                      <th>Dev Set Score</th>
-                      <th>Dev Set Std</th>
-                      <th>Test Set Score</th>
-                      <th>Test Set Std</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -363,22 +335,15 @@
                     <tr>
                       <td>1</td>
                       
-                        <td><a href="https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo">GPT-4 (0613)</a></td>
+                        <td><i class="fa fa-lock"></i>GPT-4/GPT-4-0613</td>
                       
                       
-                        <td>/</td>
+                        <td>?</td>
                       
-                      <td>59.13%</td>
+                      <td>8192</td>
+                      <td>70.64%</td>
                       
-                        <td>0.58%</td>
-                      
-                      <td>61.03%</td>
-                      
-                        <td>1.14%</td>
-                      
-                      <td>57.23%</td>
-                      
-                        <td>0.19%</td>
+                        <td>0.82%</td>
                       
                       <td></td>
                     </tr>
@@ -386,22 +351,15 @@
                     <tr>
                       <td>2</td>
                       
-                        <td><a href="https://deepseekcoder.github.io/">deepseek-coder-33b-instruct</a></td>
+                        <td><i class="fa fa-lock"></i>GPT-4/GPT-4-turbo-1106</td>
                       
                       
-                        <td>33</td>
+                        <td>?</td>
                       
-                      <td>50.34%</td>
+                      <td>8192</td>
+                      <td>68.42%</td>
                       
-                        <td></td>
-                      
-                      <td>50.13%</td>
-                      
-                        <td></td>
-                      
-                      <td>50.55%</td>
-                      
-                        <td></td>
+                        <td>0.38%</td>
                       
                       <td></td>
                     </tr>
@@ -409,22 +367,15 @@
                     <tr>
                       <td>3</td>
                       
-                        <td><a href="https://platform.openai.com/docs/models/gpt-3-5">GPT-3.5-turbo (0613)</a></td>
+                        <td><i class="fa fa-lock"></i>GPT-4/GPT-4o-2024-05-13</td>
                       
                       
-                        <td>/</td>
+                        <td>?</td>
                       
-                      <td>46.84%</td>
+                      <td>8192</td>
+                      <td>66.19%</td>
                       
-                        <td>0.70%</td>
-                      
-                      <td>46.45%</td>
-                      
-                        <td>0.72%</td>
-                      
-                      <td>47.24%</td>
-                      
-                        <td>1.75%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -432,20 +383,13 @@
                     <tr>
                       <td>4</td>
                       
-                        <td><a href="https://huggingface.co/WizardLM/WizardCoder-Python-34B-V1.0">WizardCoder-Python-34B-V1.0</a></td>
+                        <td><i class="fa fa-lock"></i>Claude 3/Claude 3 Opus</td>
                       
                       
-                        <td>34</td>
+                        <td>?</td>
                       
-                      <td>45.16%</td>
-                      
-                        <td></td>
-                      
-                      <td>46.52%</td>
-                      
-                        <td></td>
-                      
-                      <td>43.80%</td>
+                      <td>200000</td>
+                      <td>63.89%</td>
                       
                         <td></td>
                       
@@ -455,22 +399,15 @@
                     <tr>
                       <td>5</td>
                       
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-34B-Instruct</a></td>
+                        <td>Mistral Open/Codestral-22b</td>
                       
                       
-                        <td>34</td>
+                        <td>22B</td>
                       
-                      <td>43.71%</td>
+                      <td>32768</td>
+                      <td>62.98%</td>
                       
-                        <td></td>
-                      
-                      <td>44.03%</td>
-                      
-                        <td></td>
-                      
-                      <td>43.39%</td>
-                      
-                        <td></td>
+                        <td>0.56%</td>
                       
                       <td></td>
                     </tr>
@@ -478,22 +415,15 @@
                     <tr>
                       <td>6</td>
                       
-                        <td><a href="https://deepseekcoder.github.io/">deepseek-coder-6.7b-instruct</a></td>
+                        <td>DeepSeek Coder/deepseek-coder-33b-instruct</td>
                       
                       
-                        <td>6.7</td>
+                        <td>33B</td>
                       
-                      <td>42.97%</td>
+                      <td>16384</td>
+                      <td>62.96%</td>
                       
-                        <td>0.22%</td>
-                      
-                      <td>42.28%</td>
-                      
-                        <td>0.24%</td>
-                      
-                      <td>43.66%</td>
-                      
-                        <td>0.26%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -501,22 +431,15 @@
                     <tr>
                       <td>7</td>
                       
-                        <td><a href="https://huggingface.co/WizardLM/WizardCoder-Python-13B-V1.0">WizardCoder-Python-13B-V1.0</a></td>
+                        <td>Phind/Phind-CodeLlama-34B-v2</td>
                       
                       
-                        <td>13</td>
+                        <td>34B</td>
                       
-                      <td>41.22%</td>
+                      <td>4096</td>
+                      <td>59.00%</td>
                       
-                        <td>0.75%</td>
-                      
-                      <td>41.46%</td>
-                      
-                        <td>1.13%</td>
-                      
-                      <td>40.97%</td>
-                      
-                        <td>0.42%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -524,22 +447,15 @@
                     <tr>
                       <td>8</td>
                       
-                        <td><a href="https://huggingface.co/WizardLM/WizardCoder-Python-7B-V1.0">WizardCoder-Python-7B-V1.0</a></td>
+                        <td>Phind/Phind-CodeLlama-34B-v1</td>
                       
                       
-                        <td>7</td>
+                        <td>34B</td>
                       
-                      <td>40.30%</td>
+                      <td>4096</td>
+                      <td>58.47%</td>
                       
-                        <td>1.15%</td>
-                      
-                      <td>43.70%</td>
-                      
-                        <td>2.09%</td>
-                      
-                      <td>36.90%</td>
-                      
-                        <td>0.22%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -547,20 +463,13 @@
                     <tr>
                       <td>9</td>
                       
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-34B</a></td>
+                        <td><i class="fa fa-lock"></i>Mistral/mistral-large</td>
                       
                       
-                        <td>34</td>
+                        <td>?</td>
                       
-                      <td>39.75%</td>
-                      
-                        <td></td>
-                      
-                      <td>39.71%</td>
-                      
-                        <td></td>
-                      
-                      <td>39.79%</td>
+                      <td>32768</td>
+                      <td>58.22%</td>
                       
                         <td></td>
                       
@@ -570,22 +479,15 @@
                     <tr>
                       <td>10</td>
                       
-                        <td><a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta">Zypher-7b-beta</a></td>
+                        <td><i class="fa fa-lock"></i>Claude 3/Claude 3 Sonnet</td>
                       
                       
-                        <td>7</td>
+                        <td>?</td>
                       
-                      <td>39.59%</td>
+                      <td>200000</td>
+                      <td>58.20%</td>
                       
-                        <td>0.68%</td>
-                      
-                      <td>41.20%</td>
-                      
-                        <td>0.25%</td>
-                      
-                      <td>37.97%</td>
-                      
-                        <td>1.29%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -593,22 +495,15 @@
                     <tr>
                       <td>11</td>
                       
-                        <td><a href="https://huggingface.co/bigcode/octocoder">OctoCoder</a></td>
+                        <td><i class="fa fa-lock"></i>Claude 3/Claude 3 Haiku</td>
                       
                       
-                        <td>15.5</td>
+                        <td>?</td>
                       
-                      <td>37.72%</td>
+                      <td>200000</td>
+                      <td>57.57%</td>
                       
-                        <td>0.58%</td>
-                      
-                      <td>35.45%</td>
-                      
-                        <td>0.56%</td>
-                      
-                      <td>40.00%</td>
-                      
-                        <td>1.69%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -616,22 +511,15 @@
                     <tr>
                       <td>12</td>
                       
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-13B-Instruct</a></td>
+                        <td>DeepSeek LLM/deepseek-llm-67b-chat</td>
                       
                       
-                        <td>13</td>
+                        <td>67B</td>
                       
-                      <td>37.18%</td>
+                      <td>4096</td>
+                      <td>57.41%</td>
                       
-                        <td>0.51%</td>
-                      
-                      <td>36.03%</td>
-                      
-                        <td>1.37%</td>
-                      
-                      <td>38.34%</td>
-                      
-                        <td>0.36%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -639,22 +527,15 @@
                     <tr>
                       <td>13</td>
                       
-                        <td><a href="https://huggingface.co/Qwen/Qwen-14B-Chat">Qwen-14B-Chat</a></td>
+                        <td><i class="fa fa-lock"></i>GPT-3.5/GPT-3.5-turbo-0613</td>
                       
                       
-                        <td>14</td>
+                        <td>?</td>
                       
-                      <td>36.93%</td>
+                      <td>4096</td>
+                      <td>56.47%</td>
                       
-                        <td>0.12%</td>
-                      
-                      <td>36.19%</td>
-                      
-                        <td>0.75%</td>
-                      
-                      <td>37.68%</td>
-                      
-                        <td>0.91%</td>
+                        <td>1.34%</td>
                       
                       <td></td>
                     </tr>
@@ -662,22 +543,15 @@
                     <tr>
                       <td>14</td>
                       
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-34B-Python</a></td>
+                        <td><i class="fa fa-lock"></i>Mistral/mistral-small</td>
                       
                       
-                        <td>34</td>
+                        <td>?</td>
                       
-                      <td>36.36%</td>
+                      <td>32768</td>
+                      <td>55.62%</td>
                       
-                        <td></td>
-                      
-                      <td>34.75%</td>
-                      
-                        <td></td>
-                      
-                      <td>37.98%</td>
-                      
-                        <td></td>
+                        <td>0.46%</td>
                       
                       <td></td>
                     </tr>
@@ -685,22 +559,15 @@
                     <tr>
                       <td>15</td>
                       
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-13B</a></td>
+                        <td>Mistral Open/mixtral-8x7B-Instruct</td>
                       
                       
-                        <td>13</td>
+                        <td>46.7B / 12.9B</td>
                       
-                      <td>33.92%</td>
+                      <td>32768</td>
+                      <td>55.55%</td>
                       
-                        <td>0.64%</td>
-                      
-                      <td>31.78%</td>
-                      
-                        <td>1.01%</td>
-                      
-                      <td>36.06%</td>
-                      
-                        <td>0.49%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -708,22 +575,15 @@
                     <tr>
                       <td>16</td>
                       
-                        <td><a href="https://huggingface.co/WizardLM/WizardCoder-15B-V1.0">WizardCoder-15B-V1.0</a></td>
+                        <td>Qwen/Qwen-72B</td>
                       
                       
-                        <td>15</td>
+                        <td>72B</td>
                       
-                      <td>33.34%</td>
+                      <td>32768</td>
+                      <td>55.34%</td>
                       
-                        <td>0.74%</td>
-                      
-                      <td>31.85%</td>
-                      
-                        <td>0.60%</td>
-                      
-                      <td>34.83%</td>
-                      
-                        <td>1.86%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -731,22 +591,15 @@
                     <tr>
                       <td>17</td>
                       
-                        <td><a href="https://huggingface.co/bigcode/octogeex">OctoGeeX</a></td>
+                        <td>DeepSeek Coder/deepseek-coder-6.7b-instruct</td>
                       
                       
-                        <td>6</td>
+                        <td>6.7B</td>
                       
-                      <td>32.60%</td>
+                      <td>16384</td>
+                      <td>53.25%</td>
                       
-                        <td>1.02%</td>
-                      
-                      <td>31.55%</td>
-                      
-                        <td>2.01%</td>
-                      
-                      <td>33.65%</td>
-                      
-                        <td>0.91%</td>
+                        <td>0.40%</td>
                       
                       <td></td>
                     </tr>
@@ -754,22 +607,15 @@
                     <tr>
                       <td>18</td>
                       
-                        <td><a href="https://huggingface.co/Qwen/Qwen-7B-Chat">Qwen-7B-Chat</a></td>
+                        <td>Qwen/Qwen-72B-Chat</td>
                       
                       
-                        <td>7</td>
+                        <td>72B</td>
                       
-                      <td>32.48%</td>
+                      <td>32768</td>
+                      <td>52.97%</td>
                       
-                        <td>0.71%</td>
-                      
-                      <td>31.87%</td>
-                      
-                        <td>0.66%</td>
-                      
-                      <td>33.10%</td>
-                      
-                        <td>0.77%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -777,158 +623,13 @@
                     <tr>
                       <td>19</td>
                       
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-13B-Python</a></td>
+                        <td>Magicoder/Magicoder-S-CL-7B</td>
                       
                       
-                        <td>13</td>
+                        <td>7B</td>
                       
-                      <td>32.43%</td>
-                      
-                        <td>0.42%</td>
-                      
-                      <td>31.09%</td>
-                      
-                        <td>1.85%</td>
-                      
-                      <td>33.78%</td>
-                      
-                        <td>1.02%</td>
-                      
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>20</td>
-                      
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-7B</a></td>
-                      
-                      
-                        <td>7</td>
-                      
-                      <td>31.07%</td>
-                      
-                        <td>0.87%</td>
-                      
-                      <td>30.05%</td>
-                      
-                        <td>1.79%</td>
-                      
-                      <td>32.09%</td>
-                      
-                        <td>0.05%</td>
-                      
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>21</td>
-                      
-                        <td><a href="https://huggingface.co/WizardLM/WizardCoder-3B-V1.0">WizardCoder-3B-V1.0</a></td>
-                      
-                      
-                        <td>3</td>
-                      
-                      <td>30.94%</td>
-                      
-                        <td>0.60%</td>
-                      
-                      <td>31.33%</td>
-                      
-                        <td>0.80%</td>
-                      
-                      <td>30.56%</td>
-                      
-                        <td>0.58%</td>
-                      
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>22</td>
-                      
-                        <td><a href="https://huggingface.co/baichuan-inc/Baichuan2-13B-Chat">Baichuan2-13B-Chat</a></td>
-                      
-                      
-                        <td>13</td>
-                      
-                      <td>30.34%</td>
-                      
-                        <td>0.76%</td>
-                      
-                      <td>30.15%</td>
-                      
-                        <td>0.73%</td>
-                      
-                      <td>30.52%</td>
-                      
-                        <td>1.32%</td>
-                      
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>23</td>
-                      
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-7B-Instruct</a></td>
-                      
-                      
-                        <td>7</td>
-                      
-                      <td>29.51%</td>
-                      
-                        <td>0.97%</td>
-                      
-                      <td>27.96%</td>
-                      
-                        <td>0.81%</td>
-                      
-                      <td>31.06%</td>
-                      
-                        <td>1.18%</td>
-                      
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>24</td>
-                      
-                        <td><a href="https://github.com/facebookresearch/codellama">CodeLlama-7B-Python</a></td>
-                      
-                      
-                        <td>7</td>
-                      
-                      <td>28.88%</td>
-                      
-                        <td>0.45%</td>
-                      
-                      <td>27.51%</td>
-                      
-                        <td>1.09%</td>
-                      
-                      <td>30.24%</td>
-                      
-                        <td>1.97%</td>
-                      
-                      <td></td>
-                    </tr>
-                    
-                    <tr>
-                      <td>25</td>
-                      
-                        <td><a href="https://huggingface.co/WizardLM/WizardCoder-1B-V1.0">WizardCoder-1B-V1.0</a></td>
-                      
-                      
-                        <td>1</td>
-                      
-                      <td>27.11%</td>
-                      
-                        <td>0.85%</td>
-                      
-                      <td>26.53%</td>
-                      
-                        <td>1.12%</td>
-                      
-                      <td>27.70%</td>
+                      <td>16384</td>
+                      <td>52.71%</td>
                       
                         <td>0.72%</td>
                       
@@ -936,24 +637,113 @@
                     </tr>
                     
                     <tr>
+                      <td>20</td>
+                      
+                        <td>WizardLM/WizardCoder-Python-34B-V1.0</td>
+                      
+                      
+                        <td>34B</td>
+                      
+                      <td>16384</td>
+                      <td>52.59%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>21</td>
+                      
+                        <td>Phind/Phind-CodeLlama-34B-Python-v1</td>
+                      
+                      
+                        <td>34B</td>
+                      
+                      <td>4096</td>
+                      <td>52.17%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>22</td>
+                      
+                        <td>Magicoder/Magicoder-S-DS-6.7B</td>
+                      
+                      
+                        <td>6.7B</td>
+                      
+                      <td>16384</td>
+                      <td>51.46%</td>
+                      
+                        <td>1.09%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>23</td>
+                      
+                        <td>Code Llama/CodeLlama-34b-Instruct</td>
+                      
+                      
+                        <td>34B</td>
+                      
+                      <td>16384</td>
+                      <td>50.45%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>24</td>
+                      
+                        <td>01.AI/Yi-34B-Chat</td>
+                      
+                      
+                        <td>34B</td>
+                      
+                      <td>4096</td>
+                      <td>49.58%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>25</td>
+                      
+                        <td>WizardLM/WizardCoder-Python-7B-V1.0</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>16384</td>
+                      <td>49.10%</td>
+                      
+                        <td>1.59%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
                       <td>26</td>
                       
-                        <td><a href="https://huggingface.co/bigcode/starcoder">StarCoder</a></td>
+                        <td>WizardLM/WizardCoder-Python-13B-V1.0</td>
                       
                       
-                        <td>15.5</td>
+                        <td>13B</td>
                       
-                      <td>26.79%</td>
+                      <td>16384</td>
+                      <td>48.99%</td>
                       
-                        <td>0.18%</td>
-                      
-                      <td>28.74%</td>
-                      
-                        <td>0.78%</td>
-                      
-                      <td>24.84%</td>
-                      
-                        <td>0.96%</td>
+                        <td>0.92%</td>
                       
                       <td></td>
                     </tr>
@@ -961,22 +751,15 @@
                     <tr>
                       <td>27</td>
                       
-                        <td><a href="https://huggingface.co/bigcode/starcoderplus">StarCoderPlus</a></td>
+                        <td>Code Llama/CodeLlama-34b</td>
                       
                       
-                        <td>15.5</td>
+                        <td>34B</td>
                       
-                      <td>26.07%</td>
+                      <td>16384</td>
+                      <td>47.36%</td>
                       
-                        <td>1.25%</td>
-                      
-                      <td>24.45%</td>
-                      
-                        <td>1.55%</td>
-                      
-                      <td>27.69%</td>
-                      
-                        <td>2.13%</td>
+                        <td></td>
                       
                       <td></td>
                     </tr>
@@ -984,22 +767,15 @@
                     <tr>
                       <td>28</td>
                       
-                        <td><a href="https://huggingface.co/Salesforce/codegen25-7b-instruct">CodeGen2.5-7B-instruct</a></td>
+                        <td>Code Llama/CodeLlama-13b-Instruct</td>
                       
                       
-                        <td>7</td>
+                        <td>13B</td>
                       
-                      <td>25.67%</td>
+                      <td>16384</td>
+                      <td>46.37%</td>
                       
-                        <td>1.57%</td>
-                      
-                      <td>23.36%</td>
-                      
-                        <td>1.77%</td>
-                      
-                      <td>27.98%</td>
-                      
-                        <td>1.46%</td>
+                        <td>1.26%</td>
                       
                       <td></td>
                     </tr>
@@ -1007,22 +783,15 @@
                     <tr>
                       <td>29</td>
                       
-                        <td><a href="https://huggingface.co/baichuan-inc/Baichuan2-7B-Chat">Baichuan2-7B-Chat</a></td>
+                        <td>Zephyr/Zephyr 7B beta</td>
                       
                       
-                        <td>7</td>
+                        <td>7B</td>
                       
-                      <td>24.39%</td>
+                      <td>32768</td>
+                      <td>46.31%</td>
                       
-                        <td>0.25%</td>
-                      
-                      <td>25.44%</td>
-                      
-                        <td>0.02%</td>
-                      
-                      <td>23.34%</td>
-                      
-                        <td>0.50%</td>
+                        <td>1.11%</td>
                       
                       <td></td>
                     </tr>
@@ -1030,22 +799,15 @@
                     <tr>
                       <td>30</td>
                       
-                        <td><a href="https://platform.openai.com/docs/models/gpt-base">davinci-002</a></td>
+                        <td>StarCoder2/15B-Instruct</td>
                       
                       
-                        <td>/</td>
+                        <td>15B</td>
                       
-                      <td>19.08%</td>
+                      <td>16384</td>
+                      <td>45.89%</td>
                       
-                        <td>1.00%</td>
-                      
-                      <td>17.47%</td>
-                      
-                        <td>1.56%</td>
-                      
-                      <td>20.70%</td>
-                      
-                        <td>0.70%</td>
+                        <td>0.95%</td>
                       
                       <td></td>
                     </tr>
@@ -1053,22 +815,15 @@
                     <tr>
                       <td>31</td>
                       
-                        <td><a href="https://huggingface.co/microsoft/phi-1_5">phi-1.5</a></td>
+                        <td>DeepSeek MoE/deepseek-moe-16b-chat</td>
                       
                       
-                        <td>1.5</td>
+                        <td>16B / 2.8B</td>
                       
-                      <td>16.63%</td>
+                      <td>16384</td>
+                      <td>45.18%</td>
                       
-                        <td>0.03%</td>
-                      
-                      <td>14.10%</td>
-                      
-                        <td>0.84%</td>
-                      
-                      <td>19.16%</td>
-                      
-                        <td>0.87%</td>
+                        <td>1.65%</td>
                       
                       <td></td>
                     </tr>
@@ -1076,22 +831,15 @@
                     <tr>
                       <td>32</td>
                       
-                        <td><a href="https://github.com/THUDM/CodeGeeX2">CodeGeeX2</a></td>
+                        <td>OctoPack/OctoCoder</td>
                       
                       
-                        <td>6</td>
+                        <td>15.5B</td>
                       
-                      <td>16.50%</td>
+                      <td>8192</td>
+                      <td>44.55%</td>
                       
-                        <td>0.39%</td>
-                      
-                      <td>16.20%</td>
-                      
-                        <td>0.65%</td>
-                      
-                      <td>16.80%</td>
-                      
-                        <td>0.33%</td>
+                        <td>0.79%</td>
                       
                       <td></td>
                     </tr>
@@ -1099,22 +847,1183 @@
                     <tr>
                       <td>33</td>
                       
-                        <td><a href="https://huggingface.co/microsoft/phi-1">phi-1</a></td>
+                        <td>Qwen/Qwen-14B</td>
                       
                       
-                        <td>1.3</td>
+                        <td>14B</td>
                       
-                      <td>12.84%</td>
+                      <td>8192</td>
+                      <td>43.69%</td>
+                      
+                        <td>1.09%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>34</td>
+                      
+                        <td>Qwen/Qwen-14B-Chat</td>
+                      
+                      
+                        <td>14B</td>
+                      
+                      <td>8192</td>
+                      <td>43.49%</td>
+                      
+                        <td>0.63%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>35</td>
+                      
+                        <td>Magicoder/Magicoder-DS-6.7B</td>
+                      
+                      
+                        <td>6.7B</td>
+                      
+                      <td>16384</td>
+                      <td>43.47%</td>
+                      
+                        <td>0.21%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>36</td>
+                      
+                        <td>Code Llama/CodeLlama-34b-Python</td>
+                      
+                      
+                        <td>34B</td>
+                      
+                      <td>16384</td>
+                      <td>43.13%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>37</td>
+                      
+                        <td>Code Llama/CodeLlama-70b-Instruct</td>
+                      
+                      
+                        <td>70B</td>
+                      
+                      <td>4096</td>
+                      <td>42.82%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>38</td>
+                      
+                        <td>StarCoder2/15B</td>
+                      
+                      
+                        <td>15B</td>
+                      
+                      <td>16384</td>
+                      <td>42.52%</td>
+                      
+                        <td>1.24%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>39</td>
+                      
+                        <td>Magicoder/Magicoder-CL-7B</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>16384</td>
+                      <td>41.71%</td>
+                      
+                        <td>0.76%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>40</td>
+                      
+                        <td>Code Llama/CodeLlama-13b</td>
+                      
+                      
+                        <td>13B</td>
+                      
+                      <td>16384</td>
+                      <td>41.66%</td>
+                      
+                        <td>0.84%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>41</td>
+                      
+                        <td>DeepSeek Coder/deepseek-coder-1.3b-instruct</td>
+                      
+                      
+                        <td>1.3B</td>
+                      
+                      <td>16384</td>
+                      <td>41.32%</td>
+                      
+                        <td>1.12%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>42</td>
+                      
+                        <td>Code Llama/CodeLlama-13b-Python</td>
+                      
+                      
+                        <td>13B</td>
+                      
+                      <td>16384</td>
+                      <td>41.31%</td>
+                      
+                        <td>0.90%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>43</td>
+                      
+                        <td>WizardLM/WizardCoder-15B-V1.0</td>
+                      
+                      
+                        <td>15B</td>
+                      
+                      <td>2048</td>
+                      <td>41.01%</td>
+                      
+                        <td>0.22%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>44</td>
+                      
+                        <td><i class="fa fa-lock"></i>Mistral/mistral-medium</td>
+                      
+                      
+                        <td>?</td>
+                      
+                      <td>32768</td>
+                      <td>40.95%</td>
+                      
+                        <td>0.41%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>45</td>
+                      
+                        <td>gemma/gemma-7b-it</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>8192</td>
+                      <td>40.68%</td>
+                      
+                        <td>1.23%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>46</td>
+                      
+                        <td>Code Llama/CodeLlama-70b</td>
+                      
+                      
+                        <td>70B</td>
+                      
+                      <td>4096</td>
+                      <td>40.60%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>47</td>
+                      
+                        <td>Code Llama/CodeLlama-70b-Python</td>
+                      
+                      
+                        <td>70B</td>
+                      
+                      <td>4096</td>
+                      <td>40.29%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>48</td>
+                      
+                        <td>OctoPack/OctoGeeX</td>
+                      
+                      
+                        <td>6B</td>
+                      
+                      <td>8192</td>
+                      <td>40.14%</td>
+                      
+                        <td>1.55%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>49</td>
+                      
+                        <td>DeepSeek LLM/deepseek-llm-67b-base</td>
+                      
+                      
+                        <td>67B</td>
+                      
+                      <td>4096</td>
+                      <td>39.87%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>50</td>
+                      
+                        <td>Llama 2/Llama2-70B-Chat</td>
+                      
+                      
+                        <td>70B</td>
+                      
+                      <td>4096</td>
+                      <td>39.30%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>51</td>
+                      
+                        <td>DeepSeek Coder/deepseek-coder-33b-base</td>
+                      
+                      
+                        <td>33B</td>
+                      
+                      <td>16384</td>
+                      <td>38.75%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>52</td>
+                      
+                        <td>01.AI/Yi-6B-Chat</td>
+                      
+                      
+                        <td>6B</td>
+                      
+                      <td>4096</td>
+                      <td>38.14%</td>
+                      
+                        <td>0.58%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>53</td>
+                      
+                        <td>Llama 2/Llama2-70B</td>
+                      
+                      
+                        <td>70B</td>
+                      
+                      <td>4096</td>
+                      <td>37.69%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>54</td>
+                      
+                        <td>Code Llama/CodeLlama-7b</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>16384</td>
+                      <td>37.62%</td>
+                      
+                        <td>1.28%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>55</td>
+                      
+                        <td>Mistral Open/Mistral-7B-Instruct-v0.1</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>32768</td>
+                      <td>37.55%</td>
+                      
+                        <td>1.10%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>56</td>
+                      
+                        <td>InternLM/InternLM-Chat-20B</td>
+                      
+                      
+                        <td>20B</td>
+                      
+                      <td>16384</td>
+                      <td>37.41%</td>
+                      
+                        <td>0.75%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>57</td>
+                      
+                        <td>Qwen/Qwen-7B-Chat</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>32768</td>
+                      <td>37.36%</td>
+                      
+                        <td>1.29%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>58</td>
+                      
+                        <td>DeepSeek LLM/deepseek-llm-7b-chat</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>4096</td>
+                      <td>36.75%</td>
+                      
+                        <td>1.40%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>59</td>
+                      
+                        <td>Llama 2/Llama2-7B-Chat</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>4096</td>
+                      <td>36.14%</td>
+                      
+                        <td>1.05%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>60</td>
+                      
+                        <td>WizardLM/WizardCoder-3B-V1.0</td>
+                      
+                      
+                        <td>3B</td>
+                      
+                      <td>2048</td>
+                      <td>35.61%</td>
+                      
+                        <td>0.42%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>61</td>
+                      
+                        <td>Code Llama/CodeLlama-7b-Instruct</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>16384</td>
+                      <td>35.15%</td>
+                      
+                        <td>1.02%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>62</td>
+                      
+                        <td>StarCoder2/7B</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>16384</td>
+                      <td>34.90%</td>
+                      
+                        <td>0.97%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>63</td>
+                      
+                        <td>InternLM/InternLM-Chat-7B</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>8192</td>
+                      <td>34.86%</td>
+                      
+                        <td>0.90%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>64</td>
+                      
+                        <td>Baichuan2/Baichuan2-13B-Chat</td>
+                      
+                      
+                        <td>13B</td>
+                      
+                      <td>4096</td>
+                      <td>34.40%</td>
+                      
+                        <td>1.34%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>65</td>
+                      
+                        <td>DeepSeek Coder/deepseek-coder-6.7b-base</td>
+                      
+                      
+                        <td>6.7B</td>
+                      
+                      <td>16384</td>
+                      <td>33.66%</td>
+                      
+                        <td>1.24%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>66</td>
+                      
+                        <td>Code Llama/CodeLlama-7b-Python</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>16384</td>
+                      <td>32.89%</td>
+                      
+                        <td>0.45%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>67</td>
+                      
+                        <td>Llama 2/Llama2-13B-Chat</td>
+                      
+                      
+                        <td>13B</td>
+                      
+                      <td>4096</td>
+                      <td>32.29%</td>
+                      
+                        <td>1.66%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>68</td>
+                      
+                        <td>WizardLM/WizardCoder-1B-V1.0</td>
+                      
+                      
+                        <td>1B</td>
+                      
+                      <td>2048</td>
+                      <td>31.94%</td>
+                      
+                        <td>0.70%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>69</td>
+                      
+                        <td>Qwen/Qwen-7B</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>32768</td>
+                      <td>31.69%</td>
+                      
+                        <td>0.29%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>70</td>
+                      
+                        <td>StarCoder2/3B</td>
+                      
+                      
+                        <td>3B</td>
+                      
+                      <td>16384</td>
+                      <td>31.44%</td>
+                      
+                        <td>1.92%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>71</td>
+                      
+                        <td>StarCoder/StarCode+</td>
+                      
+                      
+                        <td>15.5B</td>
+                      
+                      <td>8192</td>
+                      <td>30.67%</td>
+                      
+                        <td>1.57%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>72</td>
+                      
+                        <td>StarCoder/StarCoder</td>
+                      
+                      
+                        <td>15.5B</td>
+                      
+                      <td>8192</td>
+                      <td>30.66%</td>
+                      
+                        <td>0.69%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>73</td>
+                      
+                        <td>CodeGen2.5/CodeGen2.5-7B-Instruct</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>2048</td>
+                      <td>29.57%</td>
+                      
+                        <td>1.53%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>74</td>
+                      
+                        <td><i class="fa fa-lock"></i>Mistral/mistral-tiny</td>
+                      
+                      
+                        <td>?</td>
+                      
+                      <td>32768</td>
+                      <td>29.41%</td>
+                      
+                        <td>0.26%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>75</td>
+                      
+                        <td>InternLM/InternLM-20B</td>
+                      
+                      
+                        <td>20B</td>
+                      
+                      <td>16384</td>
+                      <td>29.41%</td>
+                      
+                        <td>0.76%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>76</td>
+                      
+                        <td>DeepSeek Coder/deepseek-coder-5.7bmqa-base</td>
+                      
+                      
+                        <td>5.7B</td>
+                      
+                      <td>16384</td>
+                      <td>28.92%</td>
+                      
+                        <td>1.12%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>77</td>
+                      
+                        <td>ChatGLM/ChatGLM3-6B</td>
+                      
+                      
+                        <td>6B</td>
+                      
+                      <td>8192</td>
+                      <td>28.23%</td>
+                      
+                        <td>0.58%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>78</td>
+                      
+                        <td>Baichuan2/Baichuan2-7B-Chat</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>4096</td>
+                      <td>27.53%</td>
+                      
+                        <td>1.07%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>79</td>
+                      
+                        <td>gemma/gemma-2b-it</td>
+                      
+                      
+                        <td>2B</td>
+                      
+                      <td>8192</td>
+                      <td>27.49%</td>
+                      
+                        <td>0.52%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>80</td>
+                      
+                        <td>Qwen/Qwen-1.8B-Chat</td>
+                      
+                      
+                        <td>1.8B</td>
+                      
+                      <td>32768</td>
+                      <td>26.84%</td>
+                      
+                        <td>1.08%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>81</td>
+                      
+                        <td>DeepSeek MoE/deepseek-moe-16b-base</td>
+                      
+                      
+                        <td>16B / 2.8B</td>
+                      
+                      <td>16384</td>
+                      <td>26.65%</td>
+                      
+                        <td>0.97%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>82</td>
+                      
+                        <td>01.AI/Yi-9B</td>
+                      
+                      
+                        <td>9B</td>
+                      
+                      <td>4096</td>
+                      <td>26.39%</td>
+                      
+                        <td>0.42%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>83</td>
+                      
+                        <td>Baichuan2/Baichuan2-13B-Base</td>
+                      
+                      
+                        <td>13B</td>
+                      
+                      <td>4096</td>
+                      <td>26.32%</td>
+                      
+                        <td>1.23%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>84</td>
+                      
+                        <td>DeepSeek LLM/deepseek-llm-7b-base</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>4096</td>
+                      <td>25.34%</td>
+                      
+                        <td>1.08%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>85</td>
+                      
+                        <td>Llama 2/Llama2-13B</td>
+                      
+                      
+                        <td>13B</td>
+                      
+                      <td>4096</td>
+                      <td>24.50%</td>
                       
                         <td>0.73%</td>
                       
-                      <td>11.45%</td>
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>86</td>
                       
-                        <td>0.19%</td>
+                        <td>Baichuan2/Baichuan2-7B-Base</td>
                       
-                      <td>14.23%</td>
                       
-                        <td>1.28%</td>
+                        <td>7B</td>
+                      
+                      <td>4096</td>
+                      <td>23.50%</td>
+                      
+                        <td>1.56%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>87</td>
+                      
+                        <td>DeepSeek Coder/deepseek-coder-1.3b-base</td>
+                      
+                      
+                        <td>1.3B</td>
+                      
+                      <td>16384</td>
+                      <td>23.17%</td>
+                      
+                        <td>1.47%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>88</td>
+                      
+                        <td>Qwen/Qwen-1.8B</td>
+                      
+                      
+                        <td>1.8B</td>
+                      
+                      <td>32768</td>
+                      <td>23.12%</td>
+                      
+                        <td>1.13%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>89</td>
+                      
+                        <td>Mistral Open/Mistral-7B-v0.1</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>32768</td>
+                      <td>22.72%</td>
+                      
+                        <td>1.51%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>90</td>
+                      
+                        <td>Llama 2/Llama2-7B</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>4096</td>
+                      <td>22.35%</td>
+                      
+                        <td>1.70%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>91</td>
+                      
+                        <td>01.AI/Yi-34B</td>
+                      
+                      
+                        <td>34B</td>
+                      
+                      <td>4096</td>
+                      <td>22.01%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>92</td>
+                      
+                        <td><i class="fa fa-lock"></i>davinci/davinci-002</td>
+                      
+                      
+                        <td>?</td>
+                      
+                      <td>16384</td>
+                      <td>21.25%</td>
+                      
+                        <td>1.17%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>93</td>
+                      
+                        <td>Mistral Open/mixtral-8x7B</td>
+                      
+                      
+                        <td>46.7B / 12.9B</td>
+                      
+                      <td>32768</td>
+                      <td>21.21%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>94</td>
+                      
+                        <td>Phi/Phi1.5</td>
+                      
+                      
+                        <td>1.5B</td>
+                      
+                      <td>2048</td>
+                      <td>20.56%</td>
+                      
+                        <td>0.09%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>95</td>
+                      
+                        <td>01.AI/Yi-6B</td>
+                      
+                      
+                        <td>6B</td>
+                      
+                      <td>4096</td>
+                      <td>19.93%</td>
+                      
+                        <td>1.24%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>96</td>
+                      
+                        <td>CodeGeeX/CodeGeeX2-6B</td>
+                      
+                      
+                        <td>6B</td>
+                      
+                      <td>8192</td>
+                      <td>19.88%</td>
+                      
+                        <td>0.36%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>97</td>
+                      
+                        <td>CodeGen2/CodeGen2-16B</td>
+                      
+                      
+                        <td>16B</td>
+                      
+                      <td>2048</td>
+                      <td>16.97%</td>
+                      
+                        <td>1.15%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>98</td>
+                      
+                        <td>Phi/Phi2</td>
+                      
+                      
+                        <td>1.3B</td>
+                      
+                      <td>2048</td>
+                      <td>16.74%</td>
+                      
+                        <td>0.64%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>99</td>
+                      
+                        <td>InternLM/InternLM-7B</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>8192</td>
+                      <td>16.26%</td>
+                      
+                        <td>2.21%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>100</td>
+                      
+                        <td>gemma/gemma-7b</td>
+                      
+                      
+                        <td>7B</td>
+                      
+                      <td>8192</td>
+                      <td>16.05%</td>
+                      
+                        <td>0.80%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>101</td>
+                      
+                        <td>IEITYuan/Yuan2-51B-hf</td>
+                      
+                      
+                        <td>51B</td>
+                      
+                      <td>4096</td>
+                      <td>15.25%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>102</td>
+                      
+                        <td>gemma/gemma-2b</td>
+                      
+                      
+                        <td>2B</td>
+                      
+                      <td>8192</td>
+                      <td>14.62%</td>
+                      
+                        <td>0.50%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>103</td>
+                      
+                        <td>Phi/Phi1</td>
+                      
+                      
+                        <td>2.7B</td>
+                      
+                      <td>2048</td>
+                      <td>14.28%</td>
+                      
+                        <td>0.99%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>104</td>
+                      
+                        <td>CodeGen/CodeGen-16B-multi</td>
+                      
+                      
+                        <td>16B</td>
+                      
+                      <td>2048</td>
+                      <td>13.62%</td>
+                      
+                        <td>1.18%</td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>105</td>
+                      
+                        <td>IEITYuan/Yuan2-102B-hf</td>
+                      
+                      
+                        <td>102B</td>
+                      
+                      <td>4096</td>
+                      <td>10.48%</td>
+                      
+                        <td></td>
+                      
+                      <td></td>
+                    </tr>
+                    
+                    <tr>
+                      <td>106</td>
+                      
+                        <td>IEITYuan/Yuan2-2B-hf</td>
+                      
+                      
+                        <td>2B</td>
+                      
+                      <td>8192</td>
+                      <td>7.28%</td>
+                      
+                        <td>1.01%</td>
                       
                       <td></td>
                     </tr>
@@ -1136,56 +2045,13 @@
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Try the Benchmark!</h2>
+          <p>Note: we only support Linux environment yet.</p>
           <div class="content has-text-justified">
-            <h3>Step 0: Setup</h3>
             <ol>
               <li>Convert or save your model weights in Hugging Face Transformers format.</li>
-              <li>Clone the two repositories: <a href="https://github.com/infi-coder/ffqa-evaluation-harness">Inference Repo</a> and <a href="https://github.com/infi-coder/inficoder-eval-framework">Evaluation Repo</a>.</li>
-              <p>No requirement on the local directory paths.</p>
-              <li>Set global environment variable: </li>
-              <div class="highlight"><code>export INFERENCE_REPO_PATH=[evaluation repo]/batched_prompts/suite_v2.0.0_dev.csv</code></div>
+              <li>Clone our <a href="https://github.com/infi-coder/infibench-evaluation-harness">code repository</a>.</li>
+              <li>Follow the <a href="https://github.com/infi-coder/infibench-evaluation-harness?tab=readme-ov-file#features-and-tutorials">short tutorial</a> to generate responses and evaluate on InfiBench!</li>
             </ol>
-            <br />
-            <h3>Step 1: Generate Response for Your Model</h3>
-            <ol>
-              <li>Set the working directory to <a href="https://github.com/infi-coder/ffqa-evaluation-harness">Inference Repo</a>.</li>
-              <p>The inference repo is forked and slightly modified from <a href="https://github.com/bigcode-project/bigcode-evaluation-harness">bigcode-evaluation-harness</a> framework. We leverage its function for inference.</p> 
-              <li>Determine the prompt format to use, which corresponds to task name.</li>
-              <p>We support these format for now: <code>code-ffqa-v2</code> (the default one, system + '\n' + content), <code>code-ffqa-v2-endn</code> (system + '\n' + content + '\n'), <code>code-ffqa-v2-deepseek-chat</code> (deepseek-coder-instruct format), <code>code-ffqa-v2-baichuan2</code> (baichuan2 models format), <code>code-ffqa-v2-zypher</code> (zypher-7b-beta format), <code>code-ffqa-v2-octo</code> (octopack model format), <code>code-ffqa-v2-wizard</code> (wizard-python model format), <code>code-ffqa-v2-phi</code> (phi-1.5 model format), and <code>code-ffqa-v2-inficoder</code> (our InfiCoder model format).</p>
-              <p>Feel free to contribute by adding your model format, which is easy - just slightly modify <code>bigcode_eval/tasks/code_ffqa_v200.py</code> a bit.</p> 
-              <li>Run batch inference to generate responses for question prompts.</li>
-              <div class="highlight"><code>accelerate launch [inference repo dir]/main.py --model [your model path / hugging face hub path] --tasks [determined task name above] --batch_size [batch_size] --precision bf16 --n_samples 30 --do_sample True --temperature 0.2 --top_p 0.9 --save_generations --save_references --trust_remote_code --generation_only --max_new_tokens 1024 --save_generations_path [output raw response file path].json --eos='[EOS string]'</code></div>
-              <p>This command will output two files in your working directory: <code>[output raw response file path].json</code> which stores responses and <code>references.json</code> which stores case names as the index.</p>
-              <li>Export responses and case names to evaluation-capatible csv file.</li>
-              <div class="highlight"><code>python3 [inference repo dir]/ffqa_processor.py [output raw response file path].json references.json [response csv file].csv</code></div>
-              <p>This command will join the two output files above into one csv file <code>[response csv file].csv</code> which can be processed by the evaluation framework below.</p>
-            </ol>
-            <br />
-            <h3>Step 2: Evaluation (Dev Set)</h3>
-            <ol>
-              <li>Setup the evaluation framework: <a href="https://github.com/infi-coder/inficoder-eval-framework">Evaluation Repo</a>.</li>
-              <p>At this point, we only support Linux environment.</p>
-              <p>Run <code>pip3 install -r requirements.txt</code>, then <code>./setup.sh</code> (time costly, usually 1-2 hours) which installs necessary compilers and packages for multi-lingual execution environment.</p>
-              <li>Check the evaluation environment.</li>
-              <p>Run <code>python3 env_check.py</code> to check and fix the environment incompatibility according to the console output. If the console output is "You're good to go.", then we can proceed.</p>
-              <li>Unpack the csv output.</li>
-              <p>Unpack the csv output file from the previous inference step into a directory where each response is stored in a separate txt.</p>
-              <div class="highlight"><code>python3 adaptors/csv_response_unpacker.py [response csv file].csv [response save dir]</code></div>
-              <p>We recommend to save the responses in a directory in <code>responses/</code>, i.e., let <code>[response save dir]=responses/...</code>. The above script will create the <code>[response save dir]</code> directory if it does not exist.</p>
-              <li>Run main evaluation.</li>
-              <div class="highlight"><code>python3 grader_main.py suite_v2.0.0_dev.yaml [response save dir]</code></div>
-              <p>The evaluation takes around 15 min - 45 min.</p>
-              <p>When it finishes, there are two output files: <code>results/suite_v2.0.0_dev_[response save dir base name].txt</code> (short summary) and <code>results/suite_v2.0.0_dev_[response save dir base name].yaml</code> (all details).</p>
-              <p>You can also customized the output paths by <code>--result_summary_path</code> and <code>--result_detail_path</code> arguments respectively.</p>
-              <li>Get statistics and print the results.</li>
-              <div class="highlight"><code>python3 print_result_stat.py [result detail path] [summary txt path]</code></div>
-              <p>In console output and <code>[summary txt path]</code>, a nice table will be printed, including the overall score and percentage and the sub-scores for each question type, metric type, and programming language.</p>
-            </ol>
-            <br />
-            <h3>Step 3: Evaluate (Test Set)</h3>
-            <p>
-              Available upon request (<a href="mailto:linyi.li@bytedance.com">email us</a>).
-            </p>
           </div>
         </div>
       </div>
@@ -1216,8 +2082,8 @@
             <p>You can also give us feedback in the discussion issue posts of our repositories:</p>
             <ul>
               <li><a href="https://github.com/infi-coder/inficoder-eval/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval%2Fissues%2F1?label=General%20Discussion" /></a></li>
-              <li><a href="https://github.com/infi-coder/ffqa-evaluation-harness/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Inference%20Framework%20Discussion" /></a></li>
-              <li><a href="https://github.com/infi-coder/inficoder-eval-framework"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Evaluation%20Framework%20Discussion" /></a></li>
+              <!-- <li><a href="https://github.com/infi-coder/ffqa-evaluation-harness/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Inference%20Framework%20Discussion"></a></li>
+              <li><a href="https://github.com/infi-coder/inficoder-eval-framework/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Evaluation%20Framework%20Discussion"></a></li> -->
             </ul>
           </div>
         </div>
@@ -1229,12 +2095,12 @@
     <div class="container is-max-desktop content">
       <div class="bibtex-body">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@misc{li2023inficodereval,
+        <pre><code>@misc{inficodereval,
   author = {InfiCoderTeam},
-  title = {InfiCoder-Eval: Systematically Evaluating Question-Answering for Code Large Language Models},
-  year = {2023},
+  title = {InfiBench: Evaluating the Question-Answering Capabilities of Code LLMs},
+  year = {2024},
   publisher = {Github Pages},
-  howpublished = "\url{https://infi-coder.github.io/inficoder-eval/}"
+  howpublished = "\url{https://infi-coder.github.io/infibench/}"
 }</code></pre>
       </div>
     </div>
@@ -1244,7 +2110,7 @@
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="./static/report/inficoder_eval_report.pdf">
+        <a class="icon-link" href="https://arxiv.org/abs/2404.07940">
           <i class="fas fa-file-pdf" style="color:white"></i>
         </a>
         <a class="external-link" href="https://github.com/infi-coder" disabled="">
@@ -1259,7 +2125,7 @@
                 Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
             <p>
-              This means you are free to borrow the <a href="https://github.com/infi-coder/inficoder-eval">source
+              This means you are free to borrow the <a href="https://github.com/infi-coder/infibench">source
                 code</a> of this website,
               we just ask that you link back to this page in the footer.
             </p>
@@ -1271,7 +2137,7 @@
   
   <script>
     $(document).ready( function () {
-      $('.mainTable').DataTable({ordering: true, order: [[3, 'desc']], columns: [{ "type": "num" },{ "type": "html" },{ "type": "num" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "html", "orderable": false }]});
+      $('.mainTable').DataTable({ordering: true, order: [[4, 'desc']], columns: [{ "type": "num" },{ "type": "html" },{ "type": "num" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "html", "orderable": false }]});
     } );
   </script>
 

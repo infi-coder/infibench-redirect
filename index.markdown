@@ -6,12 +6,10 @@ layout: mydefault
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="InfiCoder-Eval: Systematically Evaluating Question-Answering
-  for Code Large Language Models">
+  <meta name="description" content="IInfiBench: Evaluating the Question-Answering Capabilities of Code LLMs">
   <meta name="keywords" content="InfiCoder-Eval, code-generation, large-language-model, benchmark">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>InfiCoder-Eval: Systematically Evaluating Question-Answering
-    for Code Large Language Models</title>
+  <title>InfiBench: Evaluating the Question-Answering Capabilities of Code LLMs</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -79,7 +77,7 @@ layout: mydefault
 
   <div class="container">
     <div class="column has-text-centered">
-      <img style="max-width: 200px; margin-bottom: -50px;" src="static/images/inficoder_eval_logo2.png">
+      <img style="max-width: 200px; margin-bottom: -50px;" src="static/images/inficoder_eval_logo3.png">
     </div>
   </div>
 
@@ -88,21 +86,18 @@ layout: mydefault
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">InfiCoder-Eval: Systematically Evaluating Question-Answering
-              for Code Large Language Models
+            <h1 class="title is-1 publication-title">InfiBench: Evaluating the Question-Answering Capabilities of Code LLMs
             </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                InfiCoder Team @ ByteDance Ltd. and Peking University
+                The InfiCoder Team
               </span>
               <br>
               <!-- <span class="author-block">
-                Main Maintainer: <a href="mailto:linyi.li@bytedance.com">Linyi Li</a>
-                <br>
-                Team Lead: <a href="mailto:hx.yang@bytedance.com">Hongxia Yang</a>
+                Main Maintainer: <a href="mailto:xxxxx">xxxxx</a>
               </span> -->
               <!-- <span class="author-block">
-                <a href="https://xxx.github.io/">Siwei Wang</a><sup>1</sup></span>
+                <a href="https://xxx.github.io/">xxxxxx</a><sup>1</sup></span>
 			        <br/> -->
             </div>
 
@@ -115,7 +110,7 @@ layout: mydefault
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="./static/report/inficoder_eval_report.pdf"
+                  <a href="https://arxiv.org/abs/2404.07940"
                     class="external-link button is-normal is-rounded is-dark" target='_blank'>
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -125,20 +120,20 @@ layout: mydefault
                 </span>
                 <!-- Dataset Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/infi-coder/ffqa-evaluation-harness"
+                  <a href="https://github.com/infi-coder/infibench-evaluation-harness/"
                      class="external-link button is-normal is-rounded is-dark" target='_blank'>
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Inference Repo</span>
+                    <span>Code</span>
                   </a>
-                  <a href="https://github.com/infi-coder/inficoder-eval-framework"
+                  <!-- <a href="https://github.com/infi-coder/inficoder-eval-framework"
                      class="external-link button is-normal is-rounded is-dark" target='_blank'>
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Evaluation Repo</span>
-                  </a>
+                  </a> -->
                 </span>
                 <!-- Twitter Link. -->
                 <!-- <span class="link-block">
@@ -163,7 +158,7 @@ layout: mydefault
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h2 class="subtitle has-text-centered">
-          InfiCoder-Eval is a systematic benchmark and evaluation framework for the free-form question-answering ability of code language models.
+          InfiBench is a comprehensive benchmark for code large language models evaluating model ability on answering freeform real-world questions in the code domain.
         </h2>
         <img src="static/images/inficoder-eval-main.png">
       </div>
@@ -179,28 +174,9 @@ layout: mydefault
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              Large language models for code (code LLMs)
-              have made huge progress. Evaluation benchmarks
-              for code LLMs, such as <a href="https://github.com/openai/human-eval">HumanEval</a>, <a href="https://ds1000-code-gen.github.io/">DS-1000</a>,
-              and <a href="https://arxiv.org/abs/2108.07732">MBPP</a>, predominantly focus on code generation. But they are insufficient to evaluate code
-              LLMs’ multifaceted ability. To fill this gap, we
-              propose InfiCoder-Eval, a large-scale free-form
-              question-answering (QA) benchmark for code.
-              InfiCoder-Eval comprises 270 carefully picked
-              high-quality StackOverflow questions, covering
-              18 programming languages. To tackle the evaluation challenge, InfiCoder-Eval includes an evaluation framework integrating four types of model-free metrics, and domain experts design the concrete criteria for each question. As confirmed
-              with human experiments, InfiCoder-Eval evaluation aligns with humans better than model-based evaluation and runs much faster at the
-              same time. We conduct a systematic evaluation with InfiCoder-Eval for more than 30 code
-              LLMs, leading to several interesting findings. For
-              example, though open-source code LLMs show
-              competitive performance with proprietary models in code generation (e.g., HumanEval), they
-              still have a large gap compared to proprietary
-              ones in InfiCoder-Eval and even the best proprietary LLM (GPT4) is still far from perfect (best
-              open-source model Deepseek-Coder 33B Instruct
-              achieves 50.34% and GPT4 achieves 59.13%).
-              Furthermore, our detailed analysis reveals several
-              weaknesses of current code LLMs. Benchmark,
-              evaluation tools, and detailed results are all publicly available.
+              Large Language Models for code (code LLMs) have witnessed tremendous progress in recent years. 
+              With the rapid development of code LLMs, many popular evaluation benchmarks, such as <a href="https://github.com/openai/human-eval">HumanEval</a>, <a href="https://ds1000-code-gen.github.io/">DS-1000</a>,
+              and <a href="https://arxiv.org/abs/2108.07732">MBPP</a>, have emerged to measure the performance of code LLMs with a particular focus on code generation tasks. However, they are insufficient to cover the full range of expected capabilities of code LLMs, which span beyond code generation to answering diverse coding-related questions. To fill this gap, we propose InfiBench, the first large-scale freeform question-answering (QA) benchmark for code to our knowledge, comprising 234 carefully selected high-quality Stack Overflow questions that span across 15 programming languages. InfiBench uses four types of model-free automatic metrics to evaluate response correctness where domain experts carefully concretize the criterion for each question. We conduct a systematic evaluation for over 100 latest code LLMs on InfiBench, leading to a series of novel and insightful findings. Our detailed analyses showcase potential directions for further advancement of code LLMs. InfiBench is fully open source and continuously expanding to foster more scientific and systematic practices for code LLM evaluation.
             </p>
           </div>
         </div>
@@ -218,7 +194,7 @@ layout: mydefault
           <h2 class="title is-3">Statistics and Examples</h2>
           <div class="content has-text-justified">
             <p>
-              InfiCoder-Eval comprises 270 carefully picked high-quality Stack Overflow questions, covering 18 programming languages, and largely <b>following the natural question distribution of <a href="https://stackoverflow.com/">Stack Overflow</a></b>.
+              InfiBench comprises 234 carefully picked high-quality Stack Overflow questions, covering 15 programming languages, and largely <b>following the natural question distribution of <a href="https://stackoverflow.com/">Stack Overflow</a></b>.
             </p>
 
             <img src="static/images/data_domain_stats.png">
@@ -226,7 +202,7 @@ layout: mydefault
             <p>
             <br>
               We recruited five domain experts to create the benchmark and annotate the correctness evaluation criteria.
-              Specifically, the InfiCoder-Eval framework integrates four types of model-free metrics for evaluating the correctness: keywords matching, blank filling, unit testing, and dialogue similarity.
+              Specifically, the InfiBench framework integrates four types of model-free metrics for evaluating the correctness: keywords matching, blank filling, unit testing, and dialogue similarity.
             </p>
 
             <img src="static/images/data_examples.png">
@@ -237,7 +213,7 @@ layout: mydefault
             </p>
 
             <center>
-              <img src="static/images/general_statistics.png">
+              <img style="width: 350px" src="static/images/general_statistics.png">
             </center>
 
           </div>
@@ -298,7 +274,7 @@ layout: mydefault
             </p>
             <p>For score computation, we treat each question equally with one point each.
               <b>Since the question frequency largely follows the Stack Overflow distribution, this score can be explained as how well the model responds to Stack Overflow questions.</b>
-              Given 270 questions in the benchmark, the full score is 270, and we by default report the percentage score (achieved score divided by the full score which is 270).
+              Given 234 questions in the benchmark, the full score is 234, and we by default report the percentage score (achieved score divided by the full score which is 234).
               The one point for each question can be further decomposed into a few scoring points within each question.
               For example, a question may contain four keywords with weights 2, 1, 1, and 1 each.
               Then, matching each keyword can contribute to 0.4, 0.2, 0.2, and 0.2 points respectively to the final score.
@@ -325,7 +301,7 @@ layout: mydefault
           <div>
             <img src="static/images/all_results.png">
           </div>
-          <p>Each blue point corresponds to one open-source model, with error bars for those smaller than 30B parameters. Proprietary models are plotted as lines with uncertainty ranges.</p>
+          <p>Each point corresponds to an open-source model, with error bars for those smaller than 30B. Each dotted segment corresponds to an MoE model. Proprietary models shown as lines with uncertainty ranges.</p>
         </div>
       </div>
     </div>
@@ -341,13 +317,11 @@ layout: mydefault
                   </div>
                 </p>
                 <p align="left">
-                  <div class="left">We evenly split the 270 benchmark questions to 135-question dev set and 135-question test set. Dev set is publicly available, and the test set is on held where evaluation is available upon request (see below for instructions). 
-                  Models are ranked according to full set scores.
+                  <div class="left">For models with >30B parameters, we evaluate once due to resource limit, otherwise we evaluate three times and report the mean and standard deviation.
                   </div>
                 </p>
                 <p align="left">
-                  <div class="left">For models with >30B parameters, we evaluate once due to resource limit, otherwise we evaluate three times and report the mean and standard deviation.
-                  </div>
+                  <div class="left"><i class="fa fa-lock"></i> stands for proprietary models.</div>
                 </p>
                 <br>
                 <table class="table maintable stripe hover row-border order-column" id="maintable">
@@ -356,12 +330,9 @@ layout: mydefault
                       <th>Rank</th>
                       <th>Model Name</th>
                       <th># Params. (in B)</th>
+                      <th>Context Length</th>
                       <th>Full Set Score</th>
                       <th>Full Set Std</th>
-                      <th>Dev Set Score</th>
-                      <th>Dev Set Std</th>
-                      <th>Test Set Score</th>
-                      <th>Test Set Std</th>
                       <th></th>
                     </tr>
                   </thead>
@@ -370,30 +341,19 @@ layout: mydefault
                     <tr>
                       <td>{{ item.rank }}</td>
                       {% if item.link != null %}
-                        <td><a href="{{ item.link }}">{{ item.title }}</a></td>
+                        <td>{% if item.locked %}<i class="fa fa-lock"></i>{% endif %}<a href="{{ item.link }}">{{ item.title }}</a></td>
                       {% else %}
-                        <td>{{ item.title }}</td>
+                        <td>{% if item.locked %}<i class="fa fa-lock"></i>{% endif %}{{ item.title }}</td>
                       {% endif %}
                       {% if item.size != null %}
                         <td>{{ item.size }}</td>
                       {% else %}
                         <td>/</td>
                       {% endif %}
+                      <td>{{ item.ctx_length }}</td>
                       <td>{{ item.score }}</td>
                       {% if item.score_std != null %}
                         <td>{{ item.score_std }}</td>
-                      {% else %}
-                        <td></td>
-                      {% endif %}
-                      <td>{{ item.devscore }}</td>
-                      {% if item.devscore_std != null %}
-                        <td>{{ item.devscore_std }}</td>
-                      {% else %}
-                        <td></td>
-                      {% endif %}
-                      <td>{{ item.testscore }}</td>
-                      {% if item.testscore_std != null %}
-                        <td>{{ item.testscore_std }}</td>
                       {% else %}
                         <td></td>
                       {% endif %}
@@ -417,56 +377,13 @@ layout: mydefault
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Try the Benchmark!</h2>
+          <p>Note: we only support Linux environment yet.</p>
           <div class="content has-text-justified">
-            <h3>Step 0: Setup</h3>
             <ol>
               <li>Convert or save your model weights in Hugging Face Transformers format.</li>
-              <li>Clone the two repositories: <a href="https://github.com/infi-coder/ffqa-evaluation-harness">Inference Repo</a> and <a href="https://github.com/infi-coder/inficoder-eval-framework">Evaluation Repo</a>.</li>
-              <p>No requirement on the local directory paths.</p>
-              <li>Set global environment variable: </li>
-              <div class="highlight"><code>export INFERENCE_REPO_PATH=[evaluation repo]/batched_prompts/suite_v2.0.0_dev.csv</code></div>
+              <li>Clone our <a href="https://github.com/infi-coder/infibench-evaluation-harness">code repository</a>.</li>
+              <li>Follow the <a href="https://github.com/infi-coder/infibench-evaluation-harness?tab=readme-ov-file#features-and-tutorials">short tutorial</a> to generate responses and evaluate on InfiBench!</li>
             </ol>
-            <br>
-            <h3>Step 1: Generate Response for Your Model</h3>
-            <ol>
-              <li>Set the working directory to <a href="https://github.com/infi-coder/ffqa-evaluation-harness">Inference Repo</a>.</li>
-              <p>The inference repo is forked and slightly modified from <a href="https://github.com/bigcode-project/bigcode-evaluation-harness">bigcode-evaluation-harness</a> framework. We leverage its function for inference.</p> 
-              <li>Determine the prompt format to use, which corresponds to task name.</li>
-              <p>We support these format for now: <code>code-ffqa-v2</code> (the default one, system + '\n' + content), <code>code-ffqa-v2-endn</code> (system + '\n' + content + '\n'), <code>code-ffqa-v2-deepseek-chat</code> (deepseek-coder-instruct format), <code>code-ffqa-v2-baichuan2</code> (baichuan2 models format), <code>code-ffqa-v2-zypher</code> (zypher-7b-beta format), <code>code-ffqa-v2-octo</code> (octopack model format), <code>code-ffqa-v2-wizard</code> (wizard-python model format), <code>code-ffqa-v2-phi</code> (phi-1.5 model format), and <code>code-ffqa-v2-inficoder</code> (our InfiCoder model format).</p>
-              <p>Feel free to contribute by adding your model format, which is easy - just slightly modify <code>bigcode_eval/tasks/code_ffqa_v200.py</code> a bit.</p> 
-              <li>Run batch inference to generate responses for question prompts.</li>
-              <div class="highlight"><code>accelerate launch [inference repo dir]/main.py --model [your model path / hugging face hub path] --tasks [determined task name above] --batch_size [batch_size] --precision bf16 --n_samples 30 --do_sample True --temperature 0.2 --top_p 0.9 --save_generations --save_references --trust_remote_code --generation_only --max_new_tokens 1024 --save_generations_path [output raw response file path].json --eos='[EOS string]'</code></div>
-              <p>This command will output two files in your working directory: <code>[output raw response file path].json</code> which stores responses and <code>references.json</code> which stores case names as the index.</p>
-              <li>Export responses and case names to evaluation-capatible csv file.</li>
-              <div class="highlight"><code>python3 [inference repo dir]/ffqa_processor.py [output raw response file path].json references.json [response csv file].csv</code></div>
-              <p>This command will join the two output files above into one csv file <code>[response csv file].csv</code> which can be processed by the evaluation framework below.</p>
-            </ol>
-            <br>
-            <h3>Step 2: Evaluation (Dev Set)</h3>
-            <ol>
-              <li>Setup the evaluation framework: <a href="https://github.com/infi-coder/inficoder-eval-framework">Evaluation Repo</a>.</li>
-              <p>At this point, we only support Linux environment.</p>
-              <p>Run <code>pip3 install -r requirements.txt</code>, then <code>./setup.sh</code> (time costly, usually 1-2 hours) which installs necessary compilers and packages for multi-lingual execution environment.</p>
-              <li>Check the evaluation environment.</li>
-              <p>Run <code>python3 env_check.py</code> to check and fix the environment incompatibility according to the console output. If the console output is "You're good to go.", then we can proceed.</p>
-              <li>Unpack the csv output.</li>
-              <p>Unpack the csv output file from the previous inference step into a directory where each response is stored in a separate txt.</p>
-              <div class="highlight"><code>python3 adaptors/csv_response_unpacker.py [response csv file].csv [response save dir]</code></div>
-              <p>We recommend to save the responses in a directory in <code>responses/</code>, i.e., let <code>[response save dir]=responses/...</code>. The above script will create the <code>[response save dir]</code> directory if it does not exist.</p>
-              <li>Run main evaluation.</li>
-              <div class="highlight"><code>python3 grader_main.py suite_v2.0.0_dev.yaml [response save dir]</code></div>
-              <p>The evaluation takes around 15 min - 45 min.</p>
-              <p>When it finishes, there are two output files: <code>results/suite_v2.0.0_dev_[response save dir base name].txt</code> (short summary) and <code>results/suite_v2.0.0_dev_[response save dir base name].yaml</code> (all details).</p>
-              <p>You can also customized the output paths by <code>--result_summary_path</code> and <code>--result_detail_path</code> arguments respectively.</p>
-              <li>Get statistics and print the results.</li>
-              <div class="highlight"><code>python3 print_result_stat.py [result detail path] [summary txt path]</code></div>
-              <p>In console output and <code>[summary txt path]</code>, a nice table will be printed, including the overall score and percentage and the sub-scores for each question type, metric type, and programming language.</p>
-            </ol>
-            <br>
-            <h3>Step 3: Evaluate (Test Set)</h3>
-            <p>
-              Available upon request (<a href='mailto:linyi.li@bytedance.com'>email us</a>).
-            </p>
           </div>
         </div>
       </div>
@@ -509,8 +426,8 @@ layout: mydefault
             <p>You can also give us feedback in the discussion issue posts of our repositories:</p>
             <ul>
               <li><a href="https://github.com/infi-coder/inficoder-eval/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval%2Fissues%2F1?label=General%20Discussion"></a></li>
-              <li><a href="https://github.com/infi-coder/ffqa-evaluation-harness/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Inference%20Framework%20Discussion"></a></li>
-              <li><a href="https://github.com/infi-coder/inficoder-eval-framework/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Evaluation%20Framework%20Discussion"></a></li>
+              <!-- <li><a href="https://github.com/infi-coder/ffqa-evaluation-harness/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Inference%20Framework%20Discussion"></a></li>
+              <li><a href="https://github.com/infi-coder/inficoder-eval-framework/issues/1"><img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Finfi-coder%2Finficoder-eval?label=Evaluation%20Framework%20Discussion"></a></li> -->
             </ul>
           </div>
         </div>
@@ -522,12 +439,12 @@ layout: mydefault
     <div class="container is-max-desktop content">
       <div class="bibtex-body">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@misc{li2023inficodereval,
+        <pre><code>@misc{inficodereval,
   author = {InfiCoderTeam},
-  title = {InfiCoder-Eval: Systematically Evaluating Question-Answering for Code Large Language Models},
-  year = {2023},
+  title = {InfiBench: Evaluating the Question-Answering Capabilities of Code LLMs},
+  year = {2024},
   publisher = {Github Pages},
-  howpublished = "\url{https://infi-coder.github.io/inficoder-eval/}"
+  howpublished = "\url{https://infi-coder.github.io/infibench/}"
 }</code></pre>
       </div>
     </div>
@@ -537,7 +454,7 @@ layout: mydefault
   <footer class="footer">
     <div class="container">
       <div class="content has-text-centered">
-        <a class="icon-link" href="./static/report/inficoder_eval_report.pdf">
+        <a class="icon-link" href="https://arxiv.org/abs/2404.07940">
           <i class="fas fa-file-pdf" style="color:white"></i>
         </a>
         <a class="icon-link" href="https://github.com/infi-coder" class="external-link" disabled>
@@ -553,7 +470,7 @@ layout: mydefault
                 Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
             <p>
-              This means you are free to borrow the <a href="https://github.com/infi-coder/inficoder-eval">source
+              This means you are free to borrow the <a href="https://github.com/infi-coder/infibench">source
                 code</a> of this website,
               we just ask that you link back to this page in the footer.
             </p>
@@ -565,7 +482,7 @@ layout: mydefault
   
   <script>
     $(document).ready( function () {
-      $('.mainTable').DataTable({ordering: true, order: [[3, 'desc']], columns: [{ "type": "num" },{ "type": "html" },{ "type": "num" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "html", "orderable": false }]});
+      $('.mainTable').DataTable({ordering: true, order: [[4, 'desc']], columns: [{ "type": "num" },{ "type": "html" },{ "type": "num" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "num-fmt" },{ "type": "html", "orderable": false }]});
     } );
   </script>
 
