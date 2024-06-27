@@ -230,7 +230,7 @@ layout: mydefault
         <div class="column is-four-fifths">
           <h2 class="title is-3">Comparison</h2>
           <div class="content has-text-justified">
-            <p>Existing benchmarks weigh heavily on code generation, unit-test-based evaluation, and a limited set of programming languages. InfiCoder-Eval processes a much higher diversity to reflect real-world code LLMs’ usage scenarios and is far from saturation.</p>
+            <p>Existing benchmarks weigh heavily on code generation, unit-test-based evaluation, and a limited set of programming languages. InfiBench processes a much higher diversity to reflect real-world code LLMs’ usage scenarios and is far from saturation.</p>
             <img src="static/images/comparison.png">
           </div>
         </div>
