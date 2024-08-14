@@ -46,7 +46,7 @@ layout: mydefault
 
   <div class="container">
     <div class="column has-text-centered">
-      <img style="max-width: 200px; margin-bottom: -50px;" src="static/images/inficoder_eval_logo3.png">
+      <img style="max-width: 200px; margin-bottom: 50px;" src="static/images/inficoder_eval_logo3.png">
     </div>
   </div>
 
@@ -54,9 +54,8 @@ layout: mydefault
     <div class="container is-max-desktop">
       <div class="hero-body">
         <h2 class="subtitle has-text-centered">
-          InfiCoder-Eval is now upgraded and renamed to <a href="https://infi-coder.github.io/infibench/">InfiBench</a>!
+          InfiCoder-Eval is now upgraded and renamed to <a href="https://infi-coder.github.io/infibench/">InfiBench</a>. Welcome to visit our new website!
         </h2>
-        <img src="static/images/inficoder-eval-main.png">
       </div>
     </div>
   </section>
